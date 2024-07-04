@@ -49,14 +49,16 @@ public class Main {
 
         //Q.5 write a program that reads a set of integers than
         // prints the sum of odd and even numbers
-        System.out.println("Enter a number to print odd & even sum: ");
+        System.out.println("Enter the number of times you would like to repeat: ");
         int userNumber = scanner.nextInt();
         int oddSum =0, evenSum=0;
         for (int i=1; i <= userNumber; i++){
-            if(i%2==1){
-                oddSum += i;
-            }else if(i%2 == 0){
-                evenSum += i;
+            System.out.println("Enter a number");
+            int userNumber2 = scanner.nextInt();
+            if(userNumber2%2==1){
+                oddSum += userNumber2;
+            }else if(userNumber2%2 == 0){
+                evenSum += userNumber2;
             }
 
         }
